@@ -34,7 +34,7 @@ function Nav(props) {
                     <span>Contact</span>
                 </li>
                 {categories.map((category) => (
-                    <li className ={`mx-1 ${currentCategory.name === category.name && 'navActive'}`}categorykey={category.name}>
+                    <li className ={`mx-1 ${currentCategory.name === category.name && 'navActive'}`} categorykey={category.name}>
                         <span onClick={() => {setCurrentCategory(category)}}>
                             {capitalizeFirstLetter(category.name)}
                         </span>
